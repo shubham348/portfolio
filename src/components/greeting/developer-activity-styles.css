@@ -1,0 +1,48 @@
+svg#freepik_stories-developer-activity:not(.animated) .animable {
+  opacity: 0;
+}
+svg#freepik_stories-developer-activity.animated
+  #freepik--background-simple--inject-2 {
+  animation: 1s 1 forwards cubic-bezier(0.36, -0.01, 0.5, 1.38) slideDown,
+    6s Infinite linear spin;
+  animation-delay: 0s, 1s;
+}
+svg#freepik_stories-developer-activity.animated #freepik--Shadow--inject-2 {
+  animation: 3s Infinite linear floating;
+  animation-delay: 0s;
+}
+svg#freepik_stories-developer-activity.animated #freepik--Character--inject-2 {
+  animation: 3s Infinite linear floating;
+  animation-delay: 0s;
+}
+@keyframes slideDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes spin {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes floating {
+  0% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
