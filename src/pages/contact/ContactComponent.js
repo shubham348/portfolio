@@ -12,7 +12,7 @@ function Contact() {
 
   const ContactData = {
     title: "Contact Me",
-    profile_image_path: "profile_photo_2.jpeg",
+    profile_image_path: "profile.jpg",
     description:
       "You can contact me at the places mentioned below. I will try to get back to you as fast as I can. ",
   };
@@ -31,11 +31,11 @@ function Contact() {
         <Fade bottom duration={1000} distance="40px">
           <div className="contact-heading-div">
             <div className="contact-heading-img-div">
-              {/* <img
+              <img
                 className="profile-pic"
-                src={require(`../../assests/images/${ContactData["profile_image_path"]}`)}
+                src={require(`../../assests/${ContactData["profile_image_path"]}`)}
                 alt=""
-              /> */}
+              />
             </div>
             <div className="contact-heading-text-div">
               <h1
