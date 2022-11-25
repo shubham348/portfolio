@@ -1,5 +1,4 @@
 import React from "react";
-import { style } from "glamor";
 import { useTheme } from "@mui/material/styles";
 import Header from "../../components/header";
 import Footer from "../../components/footer/Footer";
@@ -15,13 +14,6 @@ function Contact() {
     description:
       "You can contact me at the places mentioned below. I will try to get back to you as fast as I can. ",
   };
-
-  const styles = style({
-    backgroundColor: `${theme.accentBright}`,
-    ":hover": {
-      boxShadow: `0 5px 15px ${theme.accentBright}`,
-    },
-  });
 
   return (
     <div className="contact-main">

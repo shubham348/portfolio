@@ -2,7 +2,7 @@ import React from "react";
 import "./design-thinking-styles.css";
 
 export default function ExperienceImg(props) {
-  const theme = props.theme;
+  // const theme = props.theme;
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"

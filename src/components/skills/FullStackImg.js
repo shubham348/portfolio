@@ -1,8 +1,7 @@
 import React from "react";
-import "./code-typing-styles.css"
+import "./code-typing-styles.css";
 
 export default function FullStackImg(props) {
-  const theme = props.theme;
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
