@@ -1,7 +1,6 @@
 import React from "react";
 import "./Skills.css";
 import SkillSection from "./SkillSection";
-import { Fade } from "react-reveal";
 import { useTheme } from "@mui/material/styles";
 
 export default function Skills() {
@@ -9,11 +8,9 @@ export default function Skills() {
   return (
     <div className="main" id="skills">
       <div className="skills-header-div">
-        <Fade bottom duration={2000} distance="20px">
-          <h1 className="skills-header" style={{ color: theme.text }}>
-            Here's what I do
-          </h1>
-        </Fade>
+        <h1 className="skills-header" style={{ color: theme.text }}>
+          Here's what I do
+        </h1>
       </div>
       <SkillSection />
     </div>

@@ -1,5 +1,4 @@
 import React from "react";
-import { Fade } from "react-reveal";
 import { style } from "glamor";
 import { useTheme } from "@mui/material/styles";
 import Header from "../../components/header";
@@ -28,37 +27,32 @@ function Contact() {
     <div className="contact-main">
       <Header />
       <div className="basic-contact">
-        <Fade bottom duration={1000} distance="40px">
-          <div className="contact-heading-div">
-            <div className="contact-heading-img-div">
-              <img
-                className="profile-pic"
-                src={require(`../../assests/${ContactData["profile_image_path"]}`)}
-                alt=""
-              />
-            </div>
-            <div className="contact-heading-text-div">
-              <h1
-                className="contact-heading-text"
-                style={{ color: theme.text }}
-              >
-                {ContactData["title"]}
-              </h1>
-              <p
-                className="contact-header-detail-text subTitle"
-                style={{ color: theme.secondaryText }}
-              >
-                {ContactData["description"]}
-              </p>
-              <SocialMedia />
-              <br />
-              <br />
-              {/* <a {...styles} className="general-btn" href={"#"}>
+        <div className="contact-heading-div">
+          <div className="contact-heading-img-div">
+            <img
+              className="profile-pic"
+              src={require(`../../assests/${ContactData["profile_image_path"]}`)}
+              alt=""
+            />
+          </div>
+          <div className="contact-heading-text-div">
+            <h1 className="contact-heading-text" style={{ color: theme.text }}>
+              {ContactData["title"]}
+            </h1>
+            <p
+              className="contact-header-detail-text subTitle"
+              style={{ color: theme.secondaryText }}
+            >
+              {ContactData["description"]}
+            </p>
+            <SocialMedia />
+            <br />
+            <br />
+            {/* <a {...styles} className="general-btn" href={"#"}>
                 See my Resume
               </a> */}
-            </div>
           </div>
-        </Fade>
+        </div>
       </div>
       <div className="footerfixed">
         <Footer />

@@ -1,10 +1,9 @@
 import React from "react";
-import { Fade } from "react-reveal";
 import { style } from "glamor";
 import { useTheme } from "@mui/material/styles";
 import Header from "../../components/header";
 import Footer from "../../components/footer/Footer";
-import Experience from "../experience/Experience"
+import Experience from "../experience/Experience";
 import EducationImg from "./EducationImg";
 import "./EducationComponent.css";
 
@@ -22,40 +21,38 @@ function Education(props) {
     <div className="education-main">
       <Header />
       <div className="basic-education">
-        <Fade bottom duration={2000} distance="40px">
-          <div className="heading-div">
-            <div className="heading-img-div">
-              <EducationImg theme={theme} />
-            </div>
-            <div className="heading-text-div">
-              <h1 className="heading-text" style={{ color: theme.text }}>
-                Basic Qualification
-              </h1>
-              <h3 className="heading-sub-text" style={{ color: theme.text }}>
-                Graphic Era (Deemed to be University)
-              </h3>
-              <p
-                className="experience-header-detail-text subTitle"
-                style={{ color: theme.secondaryText }}
+        <div className="heading-div">
+          <div className="heading-img-div">
+            <EducationImg theme={theme} />
+          </div>
+          <div className="heading-text-div">
+            <h1 className="heading-text" style={{ color: theme.text }}>
+              Basic Qualification
+            </h1>
+            <h3 className="heading-sub-text" style={{ color: theme.text }}>
+              Graphic Era (Deemed to be University)
+            </h3>
+            <p
+              className="experience-header-detail-text subTitle"
+              style={{ color: theme.secondaryText }}
+            >
+              Bachelors in Computer Science and Engineering (2014-2018)
+            </p>
+            <div className="portfolio-repo-btn-div">
+              <button
+                {...styles}
+                className="button"
+                onClick={() => {
+                  window.open("https://www.geu.ac.in/", "_blank");
+                }}
               >
-                Bachelors in Computer Science and Engineering (2014-2018)
-              </p>
-              <div className="portfolio-repo-btn-div">
-                <button
-                  {...styles}
-                  className="button"
-                  onClick={() => {
-                    window.open("https://www.geu.ac.in/", "_blank");
-                  }}
-                >
-                  Visit Website
-                </button>
-              </div>
+                Visit Website
+              </button>
             </div>
           </div>
-        </Fade>
+        </div>
       </div>
-      <Experience/>
+      <Experience />
       <Footer theme={props.theme} />
     </div>
   );
