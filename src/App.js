@@ -6,7 +6,7 @@ import Main from "./pages/Main";
 export const ColorModeContext = createContext({ toggleColorMode: () => {} });
 
 function App() {
-  const [mode, setMode] = useState("light");
+  const [mode, setMode] = useState("dark");
   const colorMode = useMemo(
     () => ({
       toggleColorMode: () => {
@@ -25,7 +25,7 @@ function App() {
     text: "#343434",
     dark: "#000000",
     secondaryText: "#7F8DAA",
-    accentColor: '#443CD2',
+    accentColor: "#443CD2",
     accentBright: "#FC1056",
     projectCard: "#DCE4F2",
     skinColor: "#F7B799",
@@ -45,7 +45,7 @@ function App() {
     text: "#FFFFFF",
     dark: "#000000",
     secondaryText: "#8D8D8D",
-    accentColor: '#443CD2',
+    accentColor: "#443CD2",
     accentBright: "#FC1056",
     projectCard: "#292A2D",
     skinColor: "#F7B799",
