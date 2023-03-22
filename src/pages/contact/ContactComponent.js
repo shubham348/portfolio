@@ -1,12 +1,21 @@
 import React from "react";
+import { style } from "glamor";
 import { useTheme } from "@mui/material/styles";
 import Header from "../../components/header";
 import Footer from "../../components/footer/Footer";
 import SocialMedia from "../../components/socialMedia/SocialMedia";
 import "./ContactComponent.css";
+import BlogsImg from "./BlogsImg";
 
 function Contact() {
   const theme = useTheme();
+
+  const styles = style({
+    backgroundColor: `${theme.accentBright}`,
+    ":hover": {
+      boxShadow: `0 5px 15px ${theme.accentBright}`,
+    },
+  });
 
   const ContactData = {
     title: "Contact Me",
@@ -44,6 +53,27 @@ function Contact() {
                 See my Resume
               </a> */}
           </div>
+        </div>
+      </div>
+      <div className="blog-heading-div">
+        <div className="blog-heading-text-div">
+          <h1 className="blog-heading-text" style={{ color: theme.text }}>
+            Blogs
+          </h1>
+          <div className="blogsite-btn-div">
+            <button
+              {...styles}
+              className="button"
+              onClick={() => {
+                window.open("https://medium.com/@shubham3480", "_blank");
+              }}
+            >
+              Medium Blogs{" "}
+            </button>
+          </div>
+        </div>
+        <div className="blog-heading-img-div">
+          <BlogsImg theme={theme} />
         </div>
       </div>
       <div className="footerfixed">

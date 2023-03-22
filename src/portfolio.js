@@ -8,9 +8,9 @@ const greeting = {
   loops: [
     "Web Developer",
     10000,
-    "React Practitioner",
-    10000,
     "SoftWare Enginear",
+    10000,
+    "React Practitioner",
     10000,
     "Life Long Learner",
     10000,
